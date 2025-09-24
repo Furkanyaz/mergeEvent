@@ -36,7 +36,7 @@ st.sidebar.subheader("🎁 Element Bonus")
 gift_elements_config = {}
 # Hediye ayarları artık dinamik olarak max seviyeye kadar oluşturuluyor
 for i in range(1, max_element_level + 1):
-    gift_elements_config[i] = st.sidebar.number_input(f"Seviye {i} için Bonus", min_value=0, value=0, step=1, key=f"gift_{i}")
+    gift_elements_config[i] = st.sidebar.number_input(f"Level {i} için Bonus", min_value=0, value=0, step=1, key=f"gift_{i}")
 
 st.sidebar.markdown("---")
 
